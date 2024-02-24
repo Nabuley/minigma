@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minigma</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Minigma</h1>
+    </div>
+    <div class="container">
+        <div class="left">
+            <h2>암호화</h2>
+            <textarea id="encrypt"></textarea>
+            <h3>복잡도</h3>
+            <input type="number" id="encryptComplexity">
+            <button onclick="encryptText()">Encrypt</button>
+            <h3>암호화된 문장</h3>
+            <div class="result" id="encryptResult"></div>
+        </div>
+        <div class="right">
+            <h2>해독</h2>
+            <textarea id="decrypt"></textarea>
+            <h3>복잡도</h3>
+            <input type="number" id="decryptComplexity">
+            <button onclick="decryptText()">Decrypt</button>
+            <h3>복호화된 문장</h3>
+            <div class="result" id="decryptResult"></div>
+        </div>
+    </div>
+    <script src="minigma.js"></script>
+</body>
+</html>
